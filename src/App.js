@@ -1,46 +1,33 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { Layout, Header, Textfield, Drawer, Navigation, Content } from 'react-mdl';
+// import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
 
   return (
-    <main>
-      <h1>Hello, I'm Orlando.</h1>
-      <h2>
-        Having fun with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/master/examples/create-react-app"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        was bootstrapped with{' '}
-        <a href="https://facebook.github.io/create-react-app/">
-          Create React App
-        </a>{' '}
-        and contains three directories, <code>/public</code> for static assets,{' '}
-        <code>/src</code> for components and content, and <code>/api</code>{' '}
-        which contains a serverless <a href="https://golang.org/">Go</a>{' '}
-        function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Go
-        </a>
-        .
-      </p>
-      <br />
-    </main>
+    <div style={{height: '300px', position: 'relative'}}>
+        <Layout fixedHeader fixedDrawer>
+            <Header title="Title">
+                <Textfield
+                    value=""
+                    onChange={() => {}}
+                    label="Search"
+                    expandable
+                    expandableIcon="search"
+                />
+            </Header>
+            <Drawer title="Title">
+                <Navigation>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </Navigation>
+            </Drawer>
+            <Content />
+        </Layout>
+    </div>
   );
 }
 
