@@ -8,7 +8,7 @@ function App() {
     <main>
       <h1>Hello, I'm Orlando.</h1>
       <h2>
-        Deployed with{' '}
+        Having fun with{' '}
         <a
           href="https://vercel.com/docs"
           target="_blank"
